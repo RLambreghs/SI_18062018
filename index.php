@@ -3,12 +3,12 @@ include 'header.php';
 ?>
 
 <form action="search.php" method="POST">
-    <input type="text" name="search" placeholder="Titre, ingrédients, auteur, date...">
+    <input type="text" name="search" placeholder="Entrer votre recherche">
     <button type="submit" name="submit-search">Go</button>
 </form>
 
 <h1>Page de test</h1>
-<h2>Recettes:</h2>
+<h2>Trous Noir:</h2>
 
 <div class="article-container">
     <?php
