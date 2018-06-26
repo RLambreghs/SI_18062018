@@ -8,8 +8,13 @@ include 'header.php';
 </form>
 
 <section class="main-container">
-
+<div class="main-wrapper">
 <h2>Trous Noir</h2>
+    <?php
+    if (isset($_SESSION['u_id'])) {
+        echo "Bienvenue ".$_SESSION['u_uid'];
+    }
+    ?>
 
 <div class="article-container">
     <?php
@@ -29,6 +34,7 @@ include 'header.php';
             }
         }
     ?>
+</div>
 </div>
 
 </section>
