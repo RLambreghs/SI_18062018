@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 
-<h1>Recette</h1>
+<h1>Articles</h1>
 
 <div class="article-container">
     <?php
@@ -27,5 +27,6 @@ include 'header.php';
     ?>
 </div>
 
-</body>
-</html>
+<?php
+include "footer.php"
+?>

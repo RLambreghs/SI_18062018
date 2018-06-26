@@ -7,8 +7,9 @@ include 'header.php';
     <button type="submit" name="submit-search">Go</button>
 </form>
 
-<h1>Page de test</h1>
-<h2>Trous Noir:</h2>
+<section class="main-container">
+
+<h2>Trous Noir</h2>
 
 <div class="article-container">
     <?php
@@ -30,5 +31,8 @@ include 'header.php';
     ?>
 </div>
 
-</body>
-</html>
+</section>
+
+<?php
+include "footer.php"
+?>
