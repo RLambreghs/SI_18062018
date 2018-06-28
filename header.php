@@ -22,6 +22,9 @@ include 'connect.php';
                     if (isset($_SESSION['u_id'])) {
                         echo '<form action="includes/logout.inc.php" method="POST">
                               <button type="submit" name="submit">Déconnexion</button>
+                              </form>
+                              <form action="profil.php" method="POST">
+                              <button type="submit" name="submit">Profil</button>
                               </form>';
                     } else {
                         echo'<form action="includes/login.inc.php" method="POST">
@@ -37,30 +40,3 @@ include 'connect.php';
     </nav>
 </header>
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

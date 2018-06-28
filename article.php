@@ -1,8 +1,9 @@
 <?php
 include 'header.php';
 ?>
-
-<h1>Articles</h1>
+    <section class="main-container">
+        <div class="main-wrapper">
+            <h2>Article</h2>
 
 <div class="article-container">
     <?php
@@ -26,6 +27,9 @@ include 'header.php';
     }
     ?>
 </div>
+
+    </div>
+    </section>
 
 <?php
 include "footer.php"
