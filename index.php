@@ -2,14 +2,14 @@
 include 'header.php';
 ?>
 
-<form action="search.php" method="POST">
+<form class="search-form" action="search.php" method="POST">
     <input type="text" name="search" placeholder="Entrer votre recherche">
     <button type="submit" name="submit-search">Go</button>
 </form>
 
 <section class="main-container">
 <div class="main-wrapper">
-<h2>Trous Noir</h2>
+<h2>Trous Noirs</h2>
     <?php
     if (isset($_SESSION['u_id'])) {
         echo "Bienvenue ".$_SESSION['u_uid'];

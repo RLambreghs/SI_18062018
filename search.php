@@ -1,8 +1,9 @@
 <?php
 include 'header.php';
 ?>
-
-<h1>Résultat de recherche</h1>
+    <section class="main-container">
+    <div class="main-wrapper">
+    <h2>Résultat de recherche</h2>
 
 <div class="article-container">
     <?php
@@ -17,7 +18,7 @@ include 'header.php';
 
             if ($queryResult > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<a href='article.php?title=".$row['title']."&date=".$row['date']."'><div class='article-box'>
+                    echo "<a href='article.php?title=".urlencode($row['title'])."&date=".$row['date']."'><div class='article-box'>
                         <h3>".$row['title']."</h3>
                         <p>".$row['text']."</p>
                         <p>".$row['date']."</p>
@@ -29,6 +30,8 @@ include 'header.php';
     ?>
 </div>
 
+    </div>
+    </section>
 <?php
 include "footer.php"
 ?>
